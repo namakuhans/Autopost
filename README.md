@@ -18,7 +18,6 @@ Sebelum masuk ke step lebih lanjut, wajib kamu melakukan ini terlebih dahulu
 pkg update
 pkg upgrade
 pkg install python
-pkg install pip
 ```
 ---
 
