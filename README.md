@@ -1,7 +1,15 @@
 # 🤖 Discord Auto Poster Selfbot
 
-Auto-poster ini akan mengirim pesan otomatis ke channel Discord dengan delay dan konfigurasi yang kamu atur sendiri.
+Auto-poster ini akan mengirim pesan otomatis ke channel Discord dengan delay dan konfigurasi yang kamu atur sendiri dengan minimal satuan menit.
 
+---
+
+Sebelum masuk ke step lebih lanjut, alangkah baiknya kamu melakukan ini terlebih dahulu
+```bash
+pkg update
+pkg upgrade
+pkg install python
+```
 ---
 
 ## 🚀 Cara Menggunakan
