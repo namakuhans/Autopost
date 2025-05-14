@@ -63,7 +63,7 @@ Lalu edit `teks.json` dan isi:
 
 ### 4. Jalankan Bot
 ```bash
-python main.py
+python autopost.py
 ```
 
 ---
