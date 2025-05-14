@@ -16,8 +16,8 @@ pkg install python
 
 ### 1. Clone atau Download Repo
 ```bash
-git clone https://github.com/namakuhans/TRASH-AUTOPOST-LMFAO.git
-cd TRASH-AUTOPOST-LMFAO
+git clone https://github.com/namakuhans/Autopost.git
+cd Autopost
 ```
 
 Atau download zip:
