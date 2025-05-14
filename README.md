@@ -67,4 +67,4 @@ Auto poster akan mengirim log embed seperti ini ke webhook kamu setiap kali meng
 ---
 
 ## 👨‍💼 Dibuat Oleh
-**iHannsy** × **NamiKulo.jS**
+**iHannsy** × **A.K.A MasPakan**
