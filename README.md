@@ -89,6 +89,6 @@ Auto poster akan mengirim log embed seperti ini ke webhook kamu setiap kali meng
 
 ---
 ## 👨‍💼 Dibuat Oleh
-**iHannsy** × **A.K.A MasPakan**
+**iHannsy A.K.A MasPakan**
 
 Autopost melanggar ToS Discord, jadi gunakan dengan bijak jangan untuk spamming chat. jangan mengubah credit yang ada😇✨
