@@ -1,6 +1,8 @@
 # 📱 Contact Author
-Instagram : @saya.p4rhan
-Discord : @your.n4h
+- Instagram : @saya.p4rhan
+- Discord : @your.n4h
+
+---
 
 # 🤖 Discord Auto Poster Selfbot
 
