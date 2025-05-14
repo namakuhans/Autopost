@@ -18,6 +18,7 @@ Sebelum masuk ke step lebih lanjut, wajib kamu melakukan ini terlebih dahulu
 pkg update
 pkg upgrade
 pkg install python
+pkg install pip
 ```
 ---
 
@@ -25,6 +26,7 @@ pkg install python
 
 ### 1. Clone atau Download Repo
 ```bash
+pip install git
 git clone https://github.com/namakuhans/Autopost.git
 cd Autopost
 ```
