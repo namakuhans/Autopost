@@ -1,0 +1,15 @@
+[
+  {
+    "token": "ISI_TOKEN_DISCORD_KAMU_DI_SINI",
+    "webhook_url": "https://discord.com/api/webhooks/WEBHOOK_ID/WEBHOOK_TOKEN",
+    "channel": [
+      {
+        "id": 123456789012345678,
+        "delay": 5,
+        "message": "Halo semua!",
+        "sticker_id": 123456789012345678,
+        "image_url": "https://example.com/image.png"
+      }
+    ]
+  }
+]
