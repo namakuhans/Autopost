@@ -8,7 +8,7 @@ Auto-poster ini akan mengirim pesan otomatis ke channel Discord dengan delay dan
 
 ### 1. Clone atau Download Repo
 ```bash
-git clone https://github.com/username/discord-auto-poster.git
+git clone https://github.com/namakuhans/TRASH-AUTOPOST-LMFAO.com
 cd discord-auto-poster
 ```
 
