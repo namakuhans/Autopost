@@ -5,7 +5,7 @@
     "channel": [
       {
         "id": 123456789012345678,
-        "delay": 5,
+        "delay": "5s", #-- s = detik, m = menit, h = jam
         "message": "Halo semua!",
         "sticker_id": 123456789012345678,
         "image_url": "https://example.com/image.png"
