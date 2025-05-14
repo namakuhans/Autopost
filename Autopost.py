@@ -45,6 +45,36 @@ def detect_device():
 def generate_channel_link(channel_id):
     return f"<#{channel_id}>"
 
+def parse_delay(delay_str):
+    if isinstance(delay_str, (int, float)):
+        return float(delay_str)
+
+    time_units = {
+        's': 1,
+        'm': 60,
+        'h': 3600
+    }
+
+    try:
+        unit = delay_str[-1]
+        value = float(delay_str[:-1])
+        return value * time_units.get(unit.lower(), 60)  # default ke menit jika tidak dikenal
+    except Exception as e:
+        print(f"\033[1;31m[ERROR] Invalid delay format: {delay_str}. Defaulting to 60 seconds.\033[0m")
+        return 60
+        
+def format_delay(delay_str):
+    if isinstance(delay_str, (int, float)):
+        return f"{int(delay_str)} minutes"
+    delay_str = str(delay_str).lower()
+    if delay_str.endswith("s"):
+        return f"{int(delay_str[:-1])} seconds"
+    elif delay_str.endswith("m"):
+        return f"{int(delay_str[:-1])} minutes"
+    elif delay_str.endswith("h"):
+        return f"{int(delay_str[:-1])} hours"
+    return f"{int(delay_str)} minutes"
+
 @client.event
 async def on_ready():
     print(f"\033[1;95m𝗜𝗛𝗔𝗡𝗡𝗦𝗬 𝗦𝗧𝗜𝗟𝗟 𝗪𝗔𝗧𝗖𝗛𝗜𝗡𝗚 𝗬𝗢𝗨!😈\033[0m")
@@ -72,7 +102,7 @@ async def send_sticker_raw(channel_id, sticker_id, message, token):
 
 async def start_auto_post_channel(config, channel_data):
     channel_id = channel_data["id"]
-    delay_minutes = channel_data["delay"]
+    delay_seconds = parse_delay(channel_data["delay"])
     token = config["token"]
     webhook_url = config["webhook_url"]
 
@@ -108,7 +138,7 @@ async def start_auto_post_channel(config, channel_data):
             uptime = time.time() - start_time
             log_message(config, True, "\033[1;35mGET SENDING!", channel, uptime, channel_data)
 
-            await asyncio.sleep(delay_minutes * 60)
+            await asyncio.sleep(delay_seconds)
 
         except (aiohttp.ClientConnectorError, aiohttp.ClientOSError, discord.HTTPException) as conn_error:
             uptime = time.time() - start_time
@@ -139,7 +169,7 @@ def log_message(config, success, description, channel, uptime, channel_data):
         "fields": [
             {"name": "User <a:emoji_14:1342599216827994112>", "value": client.user.mention, "inline": False},
             {"name": "Channel <a:Chat_Revival_Ping:1160448050087591996>", "value": channel_link, "inline": False},
-            {"name": "Delay <a:emoji_17:1342603128507338814>", "value": f"{channel_data['delay']} minutes", "inline": True},
+            {"name": "Delay <a:emoji_17:1342603128507338814>", "value": format_delay(channel_data['delay']), "inline": True},
             {"name": "Device Used <a:emoji_11:1342592665337856021>", "value": detect_device(), "inline": True},
             {"name": f"{status_emoji}", "value": status, "inline": False},
             {"name": "Count of Messages <a:emoji_5:1342493516231610378>", "value": str(auto_post_counts[webhook_url]), "inline": True},
