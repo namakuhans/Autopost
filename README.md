@@ -6,11 +6,14 @@
 
 # 🤖 Discord Auto Poster Selfbot
 
-Auto-poster ini akan mengirim pesan otomatis ke channel Discord dengan delay dan konfigurasi yang kamu atur sendiri dengan minimal satuan menit.
+Auto-poster ini akan mengirim pesan otomatis ke channel Discord dengan delay dan konfigurasi yang kamu atur sendiri dengan satuan detik, menit, dan jam.
 
 ---
+# 📥 Termux Client APK
+https://f-droid.org/id/packages/com.termux/
 
-Sebelum masuk ke step lebih lanjut, alangkah baiknya kamu melakukan ini terlebih dahulu
+
+Sebelum masuk ke step lebih lanjut, wajib kamu melakukan ini terlebih dahulu
 ```bash
 pkg update
 pkg upgrade
@@ -49,6 +52,12 @@ Lalu edit `teks.json` dan isi:
 - `token` Discord kamu
 - `webhook_url` untuk log
 - `channel` dan pesan
+- `delay` bisa digunakan menjadi 3 mode, yaitu:
+      - `s` sebagai detik
+      - `m` sebagai menit
+      - `h` sebagai jam
+      
+  
 
 ---
 
@@ -72,5 +81,12 @@ Auto poster akan mengirim log embed seperti ini ke webhook kamu setiap kali meng
 
 ---
 
+
+## Untuk penggunaan PC mungkin menunggu Author mempunyai rezeki lebih, baru akan dibuatkan step-by-step caranya😹
+
+
+---
 ## 👨‍💼 Dibuat Oleh
 **iHannsy** × **A.K.A MasPakan**
+
+Autopost melanggar ToS Discord, jadi gunakan dengan bijak jangan untuk spamming chat. jangan mengubah credit yang ada😇✨
