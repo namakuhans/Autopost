@@ -1,3 +1,7 @@
+# 📱 Contact Author
+Instagram : @saya.p4rhan
+Discord : @your.n4h
+
 # 🤖 Discord Auto Poster Selfbot
 
 Auto-poster ini akan mengirim pesan otomatis ke channel Discord dengan delay dan konfigurasi yang kamu atur sendiri dengan minimal satuan menit.
